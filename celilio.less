@@ -1,0 +1,201 @@
+
+@w: #fff;
+@b: #000;
+@default-font-size: 14px;
+@default-letter-spacing: 0.01em;
+@default-line-height-offset: 4px;
+
+
+._C { clear:both;}
+._RST { padding:0; margin:0; font-size:inherit; border:0; width:inherit; height:inherit; }
+
+._SELNO { 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+._W(@w) when (@w = auto),(isnumber(@w)),(ispercentage(@w)) { width:@w; }
+._W(@w,i) when (@w = auto),(isnumber(@w)),(ispercentage(@w))  { width:@w !important; }
+._W-a(@w) when (@w = auto),(isnumber(@w)),(ispercentage(@w))  { width:@w;min-width:@w;max-width:@w; }
+._W-a(@w,i) when (@w = auto),(isnumber(@w)),(ispercentage(@w))  { width:@w !important;min-width:@w !important;max-width:@w !important; }
+
+._S(@w:0,@h:0) { height:@h; width:@w; }
+._S-i(@w:0,@h:0) { height:@h !important;  width:@w !important; }
+._S-a(@w:0,@h:0) { height:@h; width:@w;min-height:@h;max-height:@h;min-width:@w;max-width:@w; }
+._S(@w:0) { height:@w; width:@w; }
+._S-i(@w:0) { height:@w !important;  width:@w !important; }
+._S-a(@w:0) { height:@w; width:@w;min-height:@w;max-height:@w;min-width:@w;max-width:@w; }
+
+._H(@h) when (@h = auto),(isnumber(@h)),(ispercentage(@h)) { height:@h; }
+._H(@h,i) when (@h = auto),(isnumber(@h)),(ispercentage(@h))  { height:@h !important; }
+._H-a(@h) when (@h = auto),(isnumber(@h)),(ispercentage(@h))  { height:@h;min-height:@h;max-height:@h; }
+._H-a(@h,i) when (@h = auto),(isnumber(@h)),(ispercentage(@h))  { height:@h !important;min-height:@h !important;max-height:@h !important; }
+
+._MIX(@c) when (iscolor(@c)) { color:@c;}
+._MIX(@c,@bg) when (iscolor(@c)) and (ispercentage(@bg)) and (lightness(@c) >= 50%) { color:@c; background-color:darken(@c,@bg);}
+._MIX(@c,@bg) when (iscolor(@c)) and (ispercentage(@bg)) and (lightness(@c) < 50%) { color:@c; background-color:lighten(@c,@bg);}
+._MIX(@c,@bg) when (iscolor(@c)) and (iscolor(@bg)) { color:@c; background-color:@bg;}
+._MIX(@c,d,@p) when (iscolor(@c)) and (ispercentage(@p)) { color:darken(@c,@p);}
+._MIX(@c,l,@p) when (iscolor(@c)) and (ispercentage(@p)) { color:lighten(@c,@p);}
+._MIX(@c,fi,@p) when (iscolor(@c)) and (ispercentage(@p)) { color:fadein(@c,@p);}
+._MIX(@c,fo,@p) when (iscolor(@c)) and (ispercentage(@p)) { color:fadeout(@c,@p);}
+
+._BC(none) { background:none; }
+._BC(@c) when (iscolor(@c)) { background-color:@c; }
+._BC(@c,l,@p) when (iscolor(@c)) and (ispercentage(@p)) { background-color:lighten(@c,@p); }
+._BC(@c,d,@p) when (iscolor(@c)) and (ispercentage(@p)) { background-color:darken(@c,@p); }
+
+._OPACITY(@a) when (isnumber(@a)) {
+
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	zoom: 1;
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	@b: %("progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)" , @a);
+	-ms-filter:@b;
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	@c: %("alpha(opacity=%d)" , @a);
+	filter: @c;
+	/* IE 8 */
+
+	@c: @a * 0.01;
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:@c;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: @c;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: @c;
+
+}
+
+._D-n { display:none; }
+._D-b { display:block; }
+._D-ib { display:inline-block; }
+
+._R(@r:3px) {border-radius: @r;-webkit-border-radius: @r;-moz-border-radius: @r; -khtml-border-radius:@r; -o-border-radius:@r; -ms-border-radius:@r;}
+
+._BS(@style) {box-shadow:@style;-webkit-box-shadow:@style;-moz-box-shadow:@style;-khtml-box-shadow:@style;-o-box-shadow:@style;-ms-box-shadow:@style;}
+._BS(@s1,@s2) {box-shadow:@s1,@s2;-webkit-box-shadow:@s1,@s2;-moz-box-shadow:@s1,@s2;-khtml-box-shadow:@s1,@s2;-o-box-shadow:@s1,@s2;-ms-box-shadow:@s1,@s2;}
+._BS(@s1,@s2,@s3) {box-shadow:@s1,@s2,@s3;-webkit-box-shadow:@s1,@s2,@s3;-moz-box-shadow:@s1,@s2,@s3;-khtml-box-shadow:@s1,@s2,@s3;-o-box-shadow:@s1,@s2,@s3;-ms-box-shadow:@s1,@s2,@s3;}
+._TS(@style){text-shadow: @style;-webkit-text-shadow:@style;}
+
+._TRANSITION(@v) {
+	-webkit-transition:@v;
+	-moz-transition:@v;
+	-ms-transition:@v;
+	-o-transition:@v;
+	transition:@v;	
+}
+._TRANSFORM(@v) {
+	-webkit-transform:@v;
+	-moz-transform:@v;
+	-ms-transform:@v;
+	-o-transform:@v;
+	transform:@v;	
+}
+
+._BLUR(@v) when (isnumber(@v)){
+	-webkit-filter: blur(@v);
+	-moz-filter: blur(@v);
+	-o-filter: blur(@v);
+	-ms-filter: blur(@v);
+	filter: blur(@v);	
+}
+
+._FL { float:left; }._FR { float:right; }._FN { float:none; }
+
+._BD(@str,@a:none) when (@str = trb) and (@a = none)  { border-top:none;border-right:none;border-bottom:none; }
+._BD(@str,@a:none) when (@str = rbl) and (@a = none)  { border-right:none;border-right:none;border-left:none; }
+._BD(@str,@a:none) when (@str = blt) and (@a = none)  { border-top:none;border-left:none;border-top:none; }
+._BD(@str,@a:none) when (@str = ltr) and (@a = none)  { border-left:none;border-top:none;border-right:none; }
+._BD(@c,@s:1px,@st:solid) when (ispixel(@s)) and (iscolor(@c))  { border:@s @c @st; }
+
+._BD(@c,@s:1px,@m:solid) when (ispixel(@s)) and (iscolor(@c))  { border:@s @c @m; }
+
+._BD(@c,l,@p,@s:1px,@m:solid) when (iscolor(@c)) and (ispercentage(@p)) and (ispixel(@s))  { border:lighten(@c,@p) @s @m; }
+._BD(@c,d,@p,@s:1px,@m:solid) when (iscolor(@c)) and (ispercentage(@p)) and (ispixel(@s))  { border:darken(@c,@p) @s @m; }
+
+._BD-t(@c,@s:1px,@m:solid) when (ispixel(@s)) and (iscolor(@c))  { border-top:@s @c @m; }
+._BD-r(@c,@s:1px,@m:solid) when (ispixel(@s)) and (iscolor(@c))  { border-right:@s @c @m; }
+._BD-l(@c,@s:1px,@m:solid) when (ispixel(@s)) and (iscolor(@c))  { border-left:@s @c @m; }
+._BD-b(@c,@s:1px,@m:solid) when (ispixel(@s)) and (iscolor(@c))  { border-bottom:@s @c @m; }
+
+._BD-t(@c,l,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-top:@s lighten(@c,@p) @t; }
+._BD-r(@c,l,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-right:@s lighten(@c,@p) @t; }
+._BD-l(@c,l,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-left:@s lighten(@c,@p) @t; }
+._BD-b(@c,l,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-bottom:@s lighten(@c,@p) @t; }
+
+._BD-t(@c,d,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-top:@s darken(@c,@p) @t; }
+._BD-r(@c,d,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-right:@s darken(@c,@p) @t; }
+._BD-l(@c,d,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-left:@s darken(@c,@p) @t; }
+._BD-b(@c,d,@p,@s:1px,@t:solid) when (ispercentage(@p)) and (ispixel(@s)) and (iscolor(@c))  { border-bottom:@s darken(@c,@p) @t; }
+
+._FS(@s,@w:normal,@h:6px,@a:auto) when (isnumber(@s)) and (isnumber(@h)){ 
+	font-size:@s; 
+	font-weight:@w;
+	line-height:@s+@h; 
+	text-align:@a;
+	letter-spacing:@default-letter-spacing;
+}
+
+
+
+._M(@s) { margin:@s; } ._M(@s,i) { margin:@s; } 
+._Mt(@s) when (ispixel(@s)) { margin-top:@s; } ._Mt(@s,i) when (ispixel(@s)) { margin-top:@s; } 
+._Mb(@s) when (ispixel(@s)) { margin-bottom:@s; }._Mb(@s,i) when (ispixel(@s)) { margin-bottom:@s; }
+._Ml(@s) when (ispixel(@s)) { margin-left:@s; } ._Ml(@s,i) when (ispixel(@s)) { margin-left:@s; } 
+._Mr(@s) when (ispixel(@s)) { margin-right:@s; } ._Mr(@s,i) when (ispixel(@s)) { margin-right:@s; } 
+
+
+._P(@s) { padding:@s; } ._P(@s,i) { padding:@s !important; } 
+._Pt(@s) when (ispixel(@s)) { padding-top:@s; } ._Pt(@s,i) when (ispixel(@s)) { padding-top:@s !important; } 
+._Pb(@s) when (ispixel(@s)) { padding-bottom:@s; }._Pb(@s,i) when (ispixel(@s)) { padding-bottom:@s !important; }
+._Pl(@s) when (ispixel(@s)) { padding-left:@s; } ._Pl(@s,i) when (ispixel(@s)) { padding-left:@s !important; } 
+._Pr(@s) when (ispixel(@s)) { padding-right:@s; } ._Pr(@s,i) when (ispixel(@s)) { padding-right:@s !important; } 
+
+._RTC { padding:10px; ._FS(@default-font-size); text-align:justify;
+	p { margin-bottom:20px; }
+	h1 { ._FS(@default-font-size + 12); }	
+	h2 { ._FS(@default-font-size + 10); }	
+	h3 { ._FS(@default-font-size + 8); }	
+	h4 { ._FS(@default-font-size + 6); }	
+	h5 { ._FS(@default-font-size + 4); }	
+	h6 { ._FS(@default-font-size); }
+	h1,h2,h3,h4,h5,h6 {font-weight:bold; margin-top:20px;  }	
+	
+	img {border:2px solid lighten(#333,30%); ._R(5px); margin:15px; 
+		&.alignright { ._FR; margin: 15px 0 15px 15px; }
+		&.alignleft { ._FL; margin: 15px 15px 15px 0; }
+	}
+	
+	ul {  margin:10px 0 20px 20px;
+		li { list-style:square; }
+	}
+	
+}
+
+
+/* RESET ==================*/
+
+body {
+	&::-webkit-scrollbar { height:7px; width:7px; }
+	&::-webkit-scrollbar-track  {	background:#e0e0e0; }
+	&::-webkit-scrollbar-thumb { background:#b6b6b6;  }	
+}
+
+ins,mark{color:#000}a,hr{padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0}ins{text-decoration:none}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}
+*:focus, *:active:focus {outline: 0 !important;}
