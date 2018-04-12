@@ -1,0 +1,421 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"get_te",
+				"get_term\tWP Function"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"c",
+				"click\t.click()"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"pho",
+				"photo_gallery"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"text-",
+				"text-center"
+			],
+			[
+				"ali",
+				"align-items-center"
+			],
+			[
+				"fw-",
+				"fw-600"
+			],
+			[
+				"n-",
+				"no-decor"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"rounded",
+				"rounded-0"
+			],
+			[
+				"bg",
+				"bg-light-2"
+			],
+			[
+				"fs-",
+				"fs-42"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"roun",
+				"rounded-40px"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"gr",
+				"graphics-1"
+			],
+			[
+				"col-",
+				"col-6"
+			],
+			[
+				"cl",
+				"class\tAttr"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"ro",
+				"rounded-circle"
+			],
+			[
+				"d-md-",
+				"d-md-block"
+			],
+			[
+				"su",
+				"sup\tTag"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"str_re",
+				"str_replace"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 170.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/celilio.less"
+	],
+	"file_history":
+	[
+		"/D/xampp/htdocs/arv2/single.php",
+		"/D/xampp/htdocs/arv2/header.php",
+		"/D/xampp/htdocs/gumav2/functions.php",
+		"/D/xampp/htdocs/gumav2/single.php",
+		"/D/xampp/htdocs/gumav2/init.php",
+		"/D/xampp/htdocs/gumav2/search.php",
+		"/D/xampp/htdocs/gumav2/category.php",
+		"/D/xampp/htdocs/gumav2/index.php",
+		"/D/xampp/htdocs/gumav2/cdn/libs/app.js",
+		"/D/xampp/htdocs/gumav2/cdn/css/app.less",
+		"/D/xampp/htdocs/gumav2/stock.php",
+		"/D/xampp/htdocs/gumav2/footer.php",
+		"/D/xampp/htdocs/traveloclue/cdn/static/css/mainframe.less",
+		"/D/xampp/htdocs/thinkink/js/scripts.js",
+		"/D/xampp/htdocs/traveloclue/index.html",
+		"/D/xampp/htdocs/arv2/header-body.php",
+		"/D/xampp/htdocs/traveloclue/cdn/static/js/app.js",
+		"/D/xampp/htdocs/arv2/footer-body.php",
+		"/D/xampp/htdocs/arv2/footer.php",
+		"/D/xampp/htdocs/arv2/index.php",
+		"/D/xampp/htdocs/cipla/Novamox/Novamox.htm",
+		"/D/xampp/htdocs/cipla/balloon/index.htm",
+		"/D/xampp/htdocs/cipla/balloon/indexx.htm",
+		"/D/xampp/htdocs/traveloclue/cdn/static/bootstrap/css/bootstrap.min.css",
+		"/D/xampp/htdocs/cipla/balloon/css/bootstrap.min.css",
+		"/C/Users/Shyam/Desktop/confettiKit_files/index.html",
+		"/D/xampp/htdocs/cipla/balloon/index.html",
+		"/D/xampp/htdocs/cipla/balloon/style.css",
+		"/D/xampp/htdocs/cipla/balloon/javascript.js",
+		"/C/Users/Shyam/Desktop/confettiKit.html",
+		"/D/xampp/htdocs/traveloclue/cdn/static/fa/css/fontawesome-all.min.css",
+		"/D/xampp/htdocs/proholidays/single-holiday-packages.php",
+		"/D/xampp/htdocs/proholidays/cdn/static/css/mainframe.less",
+		"/D/xampp/htdocs/proholidays/cdn/static/css/styles.less",
+		"/D/xampp/htdocs/proholidays/mu-plugins/mm-holidaypackage.php",
+		"/D/xampp/htdocs/proholidays/index.php",
+		"/D/xampp/htdocs/proholidays/BS3/cdn/static/css/celilio.less",
+		"/D/xampp/htdocs/proholidays/functions.php",
+		"/D/xampp/htdocs/tution121/cdn/css/styles.less",
+		"/D/xampp/htdocs/proholidays/BS3/cdn/static/js/app.init.js",
+		"/D/xampp/htdocs/proholidays/header.php",
+		"/D/xampp/htdocs/proholidays/footer-body.php",
+		"/D/xampp/htdocs/proholidays/BS3/cdn/static/css/mainframe.less",
+		"/D/xampp/htdocs/proholidays/header-body.php",
+		"/D/xampp/htdocs/proholidays/header-body - Copy.php",
+		"/D/xampp/htdocs/gumav2/page-10173.php",
+		"/D/xampp/htdocs/tution121/cdn/libs/datepicker/css/bootstrap-datetimepicker-standalone.css",
+		"/D/xampp/htdocs/tution121/cdn/css/styles.custom.less",
+		"/D/xampp/htdocs/tution121/index.html",
+		"/D/xampp/htdocs/tution121/contact-us.html",
+		"/D/xampp/htdocs/tution121/cdn/libs/tution121.js",
+		"/D/xampp/htdocs/tution121/panel-dashboard.html",
+		"/D/xampp/htdocs/tution121/about-us.html",
+		"/D/xampp/htdocs/tution121/tutor-registration.html",
+		"/D/xampp/htdocs/tution121/how-it-works.html",
+		"/D/xampp/htdocs/tution121/courses.html",
+		"/D/xampp/htdocs/tution121/course.html",
+		"/D/xampp/htdocs/tution121/login.html",
+		"/D/xampp/htdocs/tution121/login-2.html",
+		"/D/xampp/htdocs/tution121/courses - Copy.html",
+		"/D/xampp/htdocs/tution121/student-registration.html",
+		"/D/xampp/htdocs/tution121/success.html",
+		"/D/xampp/htdocs/tution121/cdn/libs/app.js",
+		"/D/xampp/htdocs/arv2/cdn/static/js/app.js",
+		"/D/xampp/htdocs/tution121/selection.html",
+		"/D/xampp/htdocs/tution121/cdn/libs/scrollspeed/scrollspeed.js",
+		"/D/xampp/htdocs/tution121/cdn/libs/lucid/lucid.js",
+		"/D/xampp/htdocs/dyc/app/Http/Controllers/AppController.php",
+		"/D/xampp/htdocs/dyc/ignore/php.ini",
+		"/D/xampp/htdocs/dyc/.gitignore",
+		"/D/xampp/htdocs/dyc/dyc/routes/api.php",
+		"/D/xampp/htdocs/dyc/dyc/routes/web.php",
+		"/D/xampp/htdocs/dyc/app-old/routes/api.php",
+		"/D/xampp/htdocs/dyc/app-old/routes/web.php",
+		"/D/xampp/htdocs/dyc/000-default.conf",
+		"/D/xampp/htdocs/dyc/.env",
+		"/D/xampp/htdocs/dyc/error.log",
+		"/D/xampp/htdocs/dyc/kern.log",
+		"/D/xampp/htdocs/dyc/NumberComparator.php",
+		"/D/xampp/htdocs/dyc/composer.json",
+		"/D/xampp/htdocs/dyc/syslog",
+		"/D/xampp/htdocs/dyc/app.php",
+		"/D/xampp/htdocs/dyc/php.ini",
+		"/D/xampp/htdocs/dyc/app-old/app/000-default.conf",
+		"/D/xampp/htdocs/dyc/mysql.cnf",
+		"/D/xampp/htdocs/dyc/.digitalocean_password",
+		"/D/xampp/htdocs/dyc/app/routes/web.php",
+		"/D/xampp/htdocs/dyc/app/app/Http/Controllers/AppController.php",
+		"/D/xampp/htdocs/dyc/app/app/Activity.php",
+		"/D/xampp/htdocs/dyc/app/app/laravel.log",
+		"/D/xampp/htdocs/dyc/app/app/000-default.conf",
+		"/D/xampp/htdocs/dyc/app/.env",
+		"/D/xampp/htdocs/dyc/other/js/custom.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
