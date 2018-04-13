@@ -471,6 +471,7 @@ a.no-decor,a.no-decor:hover { text-decoration:none; }
 	}
 }
 
+.bg-none { background:none !important; }
 .bg-cover {
     background-position: center center;
     background-size: cover;
@@ -511,3 +512,54 @@ a.no-decor,a.no-decor:hover { text-decoration:none; }
 	
 	
 } /* .card ends */
+
+.rich-content {
+	@default-font-size: 16px;
+
+	p { margin-bottom:20px; }
+	h1 { ._FS(@default-font-size + 12); }	
+	h2 { ._FS(@default-font-size + 10); }	
+	h3 { ._FS(@default-font-size + 8); }	
+	h4 { ._FS(@default-font-size + 6); }	
+	h5 { ._FS(@default-font-size + 4); }	
+	h6 { ._FS(@default-font-size); }
+	h1,h2,h3,h4,h5,h6 {font-weight:bold; margin-top:20px;  }	
+	
+	img { 
+		/* ._BS(0 0 5px #DDD); */
+		margin:20px; 
+		&.alignright { float:right; margin: 0px 0 20px 20px; }
+		&.alignleft { float:left; margin: 0px 20px 20px 0; }
+		&.aligncenter {display: block; margin-left: auto; margin-right: auto}
+		&.no-border { border:none !important;}
+		
+		@media (max-width: 768px) {
+	
+			margin: 20px 0 !important;
+		    width: 100% !important;
+		    height: auto !important;
+	
+		}
+	}
+
+	img.size-large,
+	.wp-caption {
+		width:100% !important;
+		height:100% !important;
+		max-width:100% !important;
+		max-height:100% !important;
+
+		.wp-caption-text {
+			display: block;
+		    background: #000;
+		    padding: 7px 10px 10px 10px;
+		    text-align: center;
+		    color: #FFF;
+		}
+	}
+	
+	ul {  margin:10px 0 20px 20px;
+		li { list-style:square; }
+	}
+	
+}
